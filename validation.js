@@ -35,8 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    if (isValid) {
-      alert("Επιτυχία! Η φόρμα υποβλήθηκε.");
+    if (!isValid) {
+      event.preventDefault();
+    } else {
+      alert("Επιτυχία! Η φόρμα υποβάλλεται.");
     }
   });
 
