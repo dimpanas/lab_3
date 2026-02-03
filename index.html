@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Βιογραφικό - Δημήτρης Πάνος</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://via.placeholder.com/150" alt="Avatar" width="150" />
+      <h1>Δημητρης Πανος</h1>
+      <p>Φοιτητής στο Τμήμα ΗΜΜΥ</p>
+    </header>
+
+    <section id="about">
+      <h2>Σχετικά με Εμένα</h2>
+      <p>
+        Ονομάζομαι <strong>Δημήτρης Πάνος</strong> και κατοικώ στη
+        <strong>Θεσσαλονίκη</strong>. Είμαι φοιτητής στο τμήμα
+        <strong>Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών</strong> του
+        <strong>Πανεπιστημίου Δυτικής Μακεδονίας</strong>. Στο παρελθόν δεν είχα
+        εμπειρία με την ανάπτυξη λογισμικού, αλλά πλέον εργάζομαι ως
+        <em>Software Engineer</em>. Πρόσφατα
+        <ins
+          >ξεκίνησα να εστιάζω στην ανάπτυξη σύνθετων εφαρμογών λογισμικού</ins
+        >, χρησιμοποιώντας σύγχρονες τεχνολογίες και εργαλεία.
+      </p>
+
+      <h3>Παρουσίαση Video</h3>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video player"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Βιογραφικό</h2>
+      <h3>Εκπαίδευση</h3>
+      <ul>
+        <li>Πτυχίο ΗΜΜΥ, Πανεπιστήμιο Δυτικής Μακεδονίας (2022 - Σήμερα)</li>
+      </ul>
+      <h3>Δεξιότητες</h3>
+      <ul>
+        <li>Γλώσσες: Python, JavaScript, FastApi, Docker, Kubernetes, Go</li>
+        <li>Web: HTML, CSS, SCSS, React, Vue</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Portfolio Website</h3>
+      <p>Τα έργα μου</p>
+      <a href="https://github.com/dimpanas" target="_blank"
+        >Δείτε τα στο GitHub</a
+      >
+    </section>
+
+    <section id="contact">
+      <h3 class="h3 form-title">Επικοινωνία</h3>
+
+      <form
+        name="contactForm"
+        method="POST"
+        id="contactForm"
+        data-netlify="true"
+        novalidate
+      >
+        <input type="hidden" name="form-name" value="contactForm" />
+
+        <div class="input-group">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            class="form-input"
+            placeholder="Ονοματεπώνυμο"
+            required
+          />
+          <span class="error-msg" id="nameError"></span>
+        </div>
+
+        <div class="input-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-input"
+            placeholder="Email"
+            required
+          />
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <div class="input-group">
+          <textarea
+            name="message"
+            id="message"
+            class="form-input"
+            placeholder="Το μήνυμά σας"
+            required
+          ></textarea>
+          <span class="error-msg" id="messageError"></span>
+        </div>
+
+        <button class="form-btn" type="submit">Αποστολή</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Δημήτρης Πάνος</p>
+      <a href="https://github.com/dimpanas" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
