@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (event) {
     let isValid = true;
-
     const name = document.getElementById("fullname");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
@@ -38,14 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isValid) {
       event.preventDefault();
     } else {
-      alert("Επιτυχία! Η φόρμα υποβάλλεται.");
+      console.log("Validation passed, submitting...");
     }
   });
 
   function showError(spanId, inputEl, msg) {
     const errorSpan = document.getElementById(spanId);
-    errorSpan.innerText = msg;
-    errorSpan.style.display = "block";
+    if (errorSpan) {
+      errorSpan.innerText = msg;
+      errorSpan.style.display = "block";
+    }
     inputEl.classList.add("invalid");
   }
 });
