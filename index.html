@@ -3,84 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Βιογραφικό - Δημήτρης Πάνος</title>
+    <title>Δημήτρης Πάνος - Software Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <img src="https://via.placeholder.com/150" alt="Avatar" width="150" />
-      <h1>Δημητρης Πανος</h1>
-      <p>Φοιτητής στο Τμήμα ΗΜΜΥ</p>
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Δημήτρης Πάνος"
+        width="150"
+      />
+      <h1>Δημήτρης Πάνος</h1>
+      <p>Software Engineer | Απόφοιτος ΗΜΜΥ</p>
     </header>
 
     <section id="about">
       <h2>Σχετικά με Εμένα</h2>
       <p>
-        Ονομάζομαι <strong>Δημήτρης Πάνος</strong> και κατοικώ στη
-        <strong>Θεσσαλονίκη</strong>. Είμαι φοιτητής στο τμήμα
+        Είμαι <strong>Software Engineer</strong> με έδρα τη
+        <strong>Θεσσαλονίκη</strong>, απόφοιτος του τμήματος
         <strong>Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών</strong> του
-        <strong>Πανεπιστημίου Δυτικής Μακεδονίας</strong>. Στο παρελθόν δεν είχα
-        εμπειρία με την ανάπτυξη λογισμικού, αλλά πλέον εργάζομαι ως
-        <em>Software Engineer</em>. Πρόσφατα
-        <ins
-          >ξεκίνησα να εστιάζω στην ανάπτυξη σύνθετων εφαρμογών λογισμικού</ins
-        >, χρησιμοποιώντας σύγχρονες τεχνολογίες και εργαλεία.
+        Πανεπιστημίου Δυτικής Μακεδονίας. Εστιάζω στην ανάπτυξη σύνθετων και
+        κλιμακώσιμων εφαρμογών λογισμικού, έχοντας εμπειρία τόσο σε εγχώρια όσο
+        και σε διεθνή περιβάλλοντα (Dubai, Ευρωπαϊκή Επιτροπή).
       </p>
+    </section>
 
-      <h3>Παρουσίαση Video</h3>
-      <div class="video-container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/HrsOL9E3rgY"
-          title="YouTube video player"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-          "
-          allowfullscreen
-        >
-        </iframe>
+    <section id="experience">
+      <h2>Προϋπηρεσία</h2>
+      <div class="exp-item">
+        <strong>Kasha Dubai</strong> | Software Engineer
+        <span>(09/2024 - 11/2025)</span>
+      </div>
+      <div class="exp-item">
+        <strong>Cedefop (European Commission)</strong> | Software Engineer
+        (Contract Agent) <span>(09/2023 - 08/2024)</span>
+      </div>
+      <div class="exp-item">
+        <strong>Alternar</strong> | Software Engineer
+        <span>(09/2022 - 08/2023)</span>
+      </div>
+      <div class="exp-item">
+        <strong>Freelancer</strong> | Web Developer
+        <span>(01/2022 - 08/2022)</span>
+      </div>
+      <div class="exp-item">
+        <strong>Dtek Networking</strong> | Web Developer
+        <span>(01/2021 - 12/2021)</span>
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Βιογραφικό</h2>
-      <h3>Εκπαίδευση</h3>
-      <ul>
-        <li>Πτυχίο ΗΜΜΥ, Πανεπιστήμιο Δυτικής Μακεδονίας (2022 - Σήμερα)</li>
-      </ul>
-      <h3>Δεξιότητες</h3>
-      <ul>
-        <li>Γλώσσες: Python, JavaScript, FastApi, Docker, Kubernetes, Go</li>
-        <li>Web: HTML, CSS, SCSS, React, Vue</li>
-      </ul>
+    <section id="skills">
+      <h2>Τεχνικές Δεξιότητες</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Languages & Backend:</strong> Python, JavaScript, TypeScript,
+          PHP, Go, FastApi
+        </div>
+        <div class="skill-category">
+          <strong>Frontend:</strong> HTML, CSS, Vue.js, React
+        </div>
+        <div class="skill-category">
+          <strong>Infrastructure & DB:</strong> SQL, Docker, Kubernetes
+        </div>
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <h3>Portfolio Website</h3>
-      <p>Τα έργα μου</p>
-      <a href="https://github.com/dimpanas" target="_blank"
+      <p>
+        Μπορείτε να δείτε τον κώδικά μου και τα τρέχοντα projects μου στο
+        GitHub.
+      </p>
+      <a href="https://github.com/dimpanas" target="_blank" class="github-link"
         >Δείτε τα στο GitHub</a
       >
     </section>
 
     <section id="contact">
-      <h3 class="h3 form-title">Επικοινωνία</h3>
-
+      <h3 class="form-title">Επικοινωνία</h3>
       <form
         action="https://formspree.io/f/xbdkvewa"
         method="POST"
         id="contactForm"
         novalidate
       >
-        <input type="hidden" name="form-name" value="contactForm" />
-
         <div class="input-group">
           <input
             type="text"
@@ -92,7 +99,6 @@
           />
           <span class="error-msg" id="nameError"></span>
         </div>
-
         <div class="input-group">
           <input
             type="email"
@@ -104,7 +110,6 @@
           />
           <span class="error-msg" id="emailError"></span>
         </div>
-
         <div class="input-group">
           <textarea
             name="message"
@@ -115,14 +120,13 @@
           ></textarea>
           <span class="error-msg" id="messageError"></span>
         </div>
-
         <button class="form-btn" type="submit">Αποστολή</button>
       </form>
     </section>
 
     <footer>
       <p>&copy; 2026 Δημήτρης Πάνος</p>
-      <a href="https://github.com/dimpanas" target="_blank">GitHub</a>
+      <a href="https://github.com/dimpanas" target="_blank">GitHub Profile</a>
     </footer>
 
     <script src="validation.js"></script>
