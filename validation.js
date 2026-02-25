@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
       .forEach((el) => el.classList.remove("invalid"));
 
     if (name.value.trim() === "") {
-      showError("nameError", name, "Παρακαλώ εισάγετε το ονοματεπώνυμό σας.");
+      showError("nameError", name, "Please enter your first and last name.");
       isValid = false;
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value.trim())) {
-      showError("emailError", email, "Η διεύθυνση email δεν είναι έγκυρη.");
+      showError("emailError", email, "The email address is invalid.");
       isValid = false;
     }
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(
         "messageError",
         message,
-        "Το μήνυμα πρέπει να είναι τουλάχιστον 11 χαρακτήρες.",
+        "The message must be at least 11 characters long.",
       );
       isValid = false;
     }
